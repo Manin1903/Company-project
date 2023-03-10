@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --brand: #B33030;
+    --body: #606060;
+    --dark: #19282F;
+    --border-radius: 4px;
+    --shadow: 0px 4px 60px rgba(0, 0, 0, 0.14);
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.7;
+    color:var(--body);
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 700px;
+    color: var(--dark);
+    font-family: 'Domine', serif;
+    
+}
+a {
+    text-decoration: none;
+    color: var(--dark);
+    transition: all 0.4s linear;
+}
+a:hover {
+    color: var(--brand);
+}
+a.costom-link {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+}
+img{
+    width: 100%;
+
+}
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.section-contro{
+    margin-bottom: 35px;
+    text-align: center;
+
+}
+.section-contro p{
+    margin: auto;
+    max-width: 500px;
+}
+.navbar-brand img{
+    height: 50px;
+}
+/* Navbar */
+#hero{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),  url(./image/p1.webp);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    background-attachment: fixed;
+}
+#hero h1,
+#hero p{
+    color: white;
+    
+    
+}
+#hero h1{
+    font-size: 80px;
+}
+#hero p{
+    max-width: 600px;
+    margin: 12px auto 28px auto;
+}
+#hero .input-group {
+    padding: 12px ;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+#hero .input-group input{
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+.custom_card{
+    transition: all 0.4s ease;
+    background-color: white;
+}
+.custom_card:hover{
+    box-shadow: var(--shadow);
+    transform: translateY(-5px);
+}
+
+/* BTN */
+.btn{
+    padding: 12px 28px ;
+    font-size: 14;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.btn-brand{
+    background-color: var(--brand);
+    border-radius: var(--border-radius);
+}
+#hero .input-group input::placeholder{
+    color: white;
+}
+.navbar .bg-white {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.navbar .navbar-nav .navbar-link {
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.navbar .navbar-nav .navbar-link:hover,
+.navbar .navbar-nav .navbar-link .active {
+    color: var(--brand);
+}
+
+/* Services */
+.service{
+    padding:  44px 24px ;
+    text-align: center;
+}
+.icon-box{
+    width: 80px;
+    height: 80px;
+    background-color: var(--brand);
+    color: white;
+    border-radius: var(--border-radius);
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    display: flex;
+
+}
+.service h5{
+    margin-top: 28px;
+    margin-bottom: 12px;
+}
